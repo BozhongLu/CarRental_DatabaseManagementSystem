@@ -49,3 +49,58 @@ CREATE TABLE Driver
     dob            DATE        NOT NULL,
     licence_expiry DATE        NOT NULL
 );
+
+
+CREATE TABLE Location(
+    address VARCHAR(50) not null PRIMARY KEY,
+    hours VARCHAR(50) NOT NULL,
+    name VARCHAR(30) NOT NULL UNIQUE,
+    phone INT NOT NULL UNIQUE
+);
+
+CREATE TABLE Employee(
+    employee_id INT not null PRIMARY KEY,
+    phone INT NOT NULL UNIQUE,
+    name VARCHAR(30) NOT NULL,
+    email VARCHAR(30) NOT NULL UNIQUE,
+    salary FLOAT(16) NOT NULL,
+    start_date DATE NOT NULL,
+    job_title VARCHAR(30),
+    dob DATE NOT NULL
+);
+
+CREATE TABLE MaintenanceOperation(
+    opid INT not null PRIMARY KEY,
+    type VARCHAR(30) NOT NULL,
+    begin_time TIMESTAMP NOT NULL,
+    end_time TIMESTAMP NOT NULL,
+    registration_num INT NOT NULL,
+    FOREIGN KEY (registration_num) REFERENCES Car
+);
+
+
+CREATE TABLE Rental(
+    rental_id INT not null PRIMARY KEY,
+    name VARCHAR(50) NOT NULL,
+    FOREIGN KEY (name) REFERENCES CarClass,
+    license_number VARCHAR(50) NOT NULL,
+    FOREIGN KEY (license_number) REFERENCES Driver,
+    email VARCHAR(50) NOT NULL,
+    FOREIGN KEY (email) REFERENCES Customer,
+    card_number BIGINT NOT NULL,
+    FOREIGN KEY (card_number) REFERENCES Payment,
+    address VARCHAR(50) NOT NULL,
+    FOREIGN KEY (address) REFERENCES Location
+);
+
+CREATE TABLE Maintenance(
+    employee_id INT not null PRIMARY KEY,
+    FOREIGN KEY (employee_id) REFERENCES Employee,
+    license_number VARCHAR(50) NOT NULL,
+    license_expiry DATE NOT NULL
+);
+
+CREATE TABLE CustomerService(
+    employee_id INT not null PRIMARY KEY,
+    FOREIGN KEY (employee_id) REFERENCES Employee
+)
