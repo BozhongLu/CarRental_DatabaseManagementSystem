@@ -5,8 +5,6 @@ CREATE TABLE CarClass
     availability INT          NOT NULL,
     num_seats    INT          NOT NULL,
     features     VARCHAR(200) NOT NULL,
-    address      VARCHAR(100) NOT NULL,
-    FOREIGN KEY (address) REFERENCES Location (address)
 );
 
 CREATE TABLE Customer
