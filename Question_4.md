@@ -45,6 +45,28 @@ cs421.cs421g83> UPDATE carclass SET features='Our SUVs offer plenty of flexibili
 cs421.cs421g83> INSERT INTO carclass VALUES ('Mini Van', 110.25, 7, 'Our minivans and passenger vans can seat up to 7 passengers respectively and are great for family vacations or accommodating large groups.')
 [2020-02-26 19:49:16] 1 row affected in 7 ms
 
+/* Insert customer */
+
+cs421.cs421g83> INSERT INTO customer VALUES ('bozhong.lu@mail.mcgill.ca', 'Bozhong Lu', 514965090)
+[2020-02-26 20:22:32] 1 row affected in 258 ms
+
+cs421.cs421g83> INSERT INTO customer VALUES ('muhang.li@mail.mcgill.ca', 'Muhang Li', 5141231234)
+[2020-02-26 20:22:33] 1 row affected in 268 ms
+
+cs421.cs421g83> INSERT INTO customer VALUES ('hao.li@mail.mcgill.ca', 'Hao Li', 5143452345)
+[2020-02-26 20:22:35] 1 row affected in 59 ms
+
+cs421.cs421g83> INSERT INTO customer VALUES ('julia.kafato@mail.mcgill.ca', 'Julia Kafato', 5146786789)
+[2020-02-26 20:22:36] 1 row affected in 285 ms
+
+cs421.cs421g83> INSERT INTO customer VALUES ('lebron.james@nba.com', 'Lebron James', 23232323)
+[2020-02-26 20:22:37] 1 row affected in 392 ms
+
+cs421.cs421g83> INSERT INTO customer VALUES ('dwayne.wade@nba.com', 'Dwayne Wade', 0303030303)
+[2020-02-26 20:25:26] 1 row affected in 9 ms
+
+
+
 ```
 
 
