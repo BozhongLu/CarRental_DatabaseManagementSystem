@@ -95,6 +95,23 @@ cs421.cs421g83> INSERT INTO car VALUES ('000000008', 'Ford', 'ABC002','Predator'
 cs421.cs421g83> INSERT INTO car VALUES ('000000009', 'Ford', 'ABC003','Fox', 'Blue', '2018-12-08', 2000, 'Standard Car', 0000003, 'The Fox is a fresh face among luxury sedans, and it impressed us right out of the gate' )
 [2020-02-26 21:20:58] 1 row affected in 10 ms
 
+/* Insert Driver */
+
+cs421> INSERT INTO driver VALUES ('abc000001', 'Bradley Cooper', '1980-09-03','2021-06-01')
+[2020-02-27 12:02:30] 1 row affected in 29 ms
+cs421> INSERT INTO driver VALUES ('abc000002', 'Jason Tatum', '1990-10-03','2021-06-01')
+[2020-02-27 12:02:30] 1 row affected in 9 ms
+cs421> INSERT INTO driver VALUES ('abc000003', 'Kyrie Irving', '1991-02-03','2021-06-01')
+[2020-02-27 12:02:30] 1 row affected in 9 ms
+cs421> INSERT INTO driver VALUES ('abc000004', 'Tristan Thompson', '1985-09-03','2021-06-01')
+[2020-02-27 12:02:30] 1 row affected in 13 ms
+cs421> INSERT INTO driver VALUES ('abc000005', 'Ja Morant', '1995-07-04','2021-06-01')
+[2020-02-27 12:02:30] 1 row affected in 10 ms
+cs421> INSERT INTO driver VALUES ('abc000006', 'Trae Young', '1996-06-02','2021-06-01')
+[2020-02-27 12:02:31] 1 row affected in 12 ms
+cs421> INSERT INTO driver VALUES ('abc000007', 'Steph Curry', '1989-10-12','2021-06-01')
+[2020-02-27 12:02:31] 1 row affected in 13 ms
+
 
 
 ```
