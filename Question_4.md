@@ -83,6 +83,18 @@ cs421.cs421g83> INSERT INTO car VALUES ('000000004', 'BMW', 'ABC890','BMW 330', 
 cs421.cs421g83> INSERT INTO car VALUES ('000000005', 'Mercedes-Benz', 'ABC012','Mercedes-Benz C-A', 'White', '2020-02-20', 5000, 'Full Size Car', 0000001, 'The A-Class is a fresh face among luxury sedans, and it impressed us right out of the gate' )
 [2020-02-26 20:58:42] 1 row affected in 10 ms
 
+cs421.cs421g83> INSERT INTO car VALUES ('000000006', 'Porche', 'ABC000','Porche Panamela', 'Silver', '2019-05-12', 2000, 'Compact Car', 0000005, 'The Panamela is a fresh face among luxury sedans, and it impressed us right out of the gate' )
+[2020-02-26 21:20:04] 1 row affected in 10 ms
+
+cs421.cs421g83> INSERT INTO car VALUES ('000000007', 'Toyota', 'ABC001','Camery', 'Black', '2020-01-15', 1000, 'Economy Car', 0000004, 'The Camery is a fresh face among luxury sedans, and it impressed us right out of the gate' )
+[2020-02-26 21:20:04] 1 row affected in 9 ms
+
+cs421.cs421g83> INSERT INTO car VALUES ('000000008', 'Ford', 'ABC002','Predator', 'Black', '2020-02-01', 2000, 'Mini Van', 0000005, 'The Predator is a fresh face among luxury mini van, and it impressed us right out of the gate' )
+[2020-02-26 21:20:04] 1 row affected in 9 ms
+
+cs421.cs421g83> INSERT INTO car VALUES ('000000009', 'Ford', 'ABC003','Fox', 'Blue', '2018-12-08', 2000, 'Standard Car', 0000003, 'The Fox is a fresh face among luxury sedans, and it impressed us right out of the gate' )
+[2020-02-26 21:20:58] 1 row affected in 10 ms
+
 
 
 ```
