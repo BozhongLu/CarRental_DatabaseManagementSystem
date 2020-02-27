@@ -66,6 +66,24 @@ cs421.cs421g83> INSERT INTO customer VALUES ('dwayne.wade@nba.com', 'Dwayne Wade
 [2020-02-26 20:25:26] 1 row affected in 9 ms
 
 
+/* Insert Car */
+
+cs421.cs421g83> INSERT INTO car VALUES ('000000001', 'BMW', 'ABC123','BMW X1', 'Red', '2020-02-20', 10000, 'Intermediate SUV', 0000001, 'With its responsive engine, sporty handling and ample cargo space, the BMW X1 stands out as a top luxury subcompact SUV' )
+[2020-02-26 20:55:10] 1 row affected in 8 ms
+
+cs421.cs421g83> INSERT INTO car VALUES ('000000002', 'Porche', 'ABC456','Porche Macan', 'Blue', '2020-02-20', 5000, 'Intermediate SUV', 0000002, 'With snappy acceleration from a range of turbocharged engines, precise handling and a firm yet compliant ride quality, the Macan is arguably the closest you can get to a 911 in an SUV' )
+[2020-02-26 20:55:10] 1 row affected in 67 ms
+
+cs421.cs421g83> INSERT INTO car VALUES ('000000003', 'Mercedes-Benz', 'ABC789','Mercedes-Benz GLE', 'White', '2020-02-20', 10000, 'Intermediate SUV', 0000001, 'With innovative safety features, a roomy interior, and one of the best infotainment systems around, the GLE is a stellar pick for a midsize luxury SUV' )
+[2020-02-26 20:55:10] 1 row affected in 9 ms
+
+cs421.cs421g83> INSERT INTO car VALUES ('000000004', 'BMW', 'ABC890','BMW 330', 'Red', '2020-02-20', 2000, 'Intermediate Car', 0000002, 'The 330 is a fresh face among luxury sedans, and it impressed us right out of the gate' )
+[2020-02-26 20:57:00] 1 row affected in 7 ms
+
+cs421.cs421g83> INSERT INTO car VALUES ('000000005', 'Mercedes-Benz', 'ABC012','Mercedes-Benz C-A', 'White', '2020-02-20', 5000, 'Full Size Car', 0000001, 'The A-Class is a fresh face among luxury sedans, and it impressed us right out of the gate' )
+[2020-02-26 20:58:42] 1 row affected in 10 ms
+
+
 
 ```
 
