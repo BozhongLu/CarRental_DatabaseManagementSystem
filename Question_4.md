@@ -192,6 +192,22 @@ cs421.cs421g83> INSERT INTO rental VALUES (4, 'Full Size Car', 'abc000004', 'jul
 cs421.cs421g83> INSERT INTO rental VALUES (5, 'Compact Car', 'abc000005', 'lebron.james@nba.com', 500000000000, '1600 Pennsylvania Avenue Washington DC' )
 [2020-02-27 22:27:54] 1 row affected in 7 ms
 
+/* Insert maintenanceOperation */
+cs421> INSERT INTO maintenanceoperation VALUES (1, 'tire replacement', '2020-02-15 04:05:06', '2020-02-15 04:20:06', 6)
+[2020-02-28 17:38:08] 1 row affected in 35 ms
+
+cs421.cs421g83> INSERT INTO maintenanceoperation VALUES (2, 'window replacement', '2020-02-15 04:05:06', '2020-02-15 04:20:06', 6)
+[2020-02-28 17:40:13] 1 row affected in 11 ms
+
+cs421.cs421g83> INSERT INTO maintenanceoperation VALUES (3, 'door fix', '2020-02-16 04:05:06', '2020-02-15 04:20:06', 6)
+[2020-02-28 17:40:13] 1 row affected in 9 ms
+
+cs421.cs421g83> INSERT INTO maintenanceoperation VALUES (4, 'rear cleaning', '2020-02-17 04:05:06', '2020-02-18 04:20:06', 6)
+[2020-02-28 17:40:13] 1 row affected in 9 ms
+
+cs421.cs421g83> INSERT INTO maintenanceoperation VALUES (5, 'electric system fix', '2020-01-15 04:05:06', '2020-02-15 04:20:06', 6)
+[2020-02-28 17:40:13] 1 row affected in 12 ms
+
 
 
 ```

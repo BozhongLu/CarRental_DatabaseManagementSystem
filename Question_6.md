@@ -40,4 +40,8 @@ UPDATE carclass SET features=
           ('Our SUVs offer plenty of flexibility with seating capacity, power, and luggage room.')-
           WHERE name='Intermediate SUV';
 
+SELECT features from carclass WHERE name='Intermediate SUV';
+'Our SUVs offer plenty of flexibility with seating capacity, power, and luggage room.'
+
+
 ```
