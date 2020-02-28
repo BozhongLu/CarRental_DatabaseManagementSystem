@@ -156,6 +156,19 @@ cs421.cs421g83> INSERT INTO customerservice VALUES (0000002)
 cs421.cs421g83> INSERT INTO customerservice VALUES (0000005)
 [2020-02-27 20:12:37] 1 row affected in 9 ms
 
+/* Insert payment */
+cs421> INSERT INTO payment VALUES (100000000000, 'Bozhong Lu', 100, '100 Montreal', '2023-09-01')
+[2020-02-27 22:03:02] 1 row affected in 9 ms
+cs421> INSERT INTO payment VALUES (200000000000, 'Muhang Li', 200, '200 Calgary', '2023-09-01')
+[2020-02-27 22:03:02] 1 row affected in 9 ms
+cs421> INSERT INTO payment VALUES (300000000000, 'Hao Li', 300, '300 Edmonton', '2023-09-01')
+[2020-02-27 22:03:02] 1 row affected in 6 ms
+cs421> INSERT INTO payment VALUES (400000000000, 'Julia Kafato', 400, '400 Toronto', '2023-09-01')
+[2020-02-27 22:03:02] 1 row affected in 5 ms
+cs421> INSERT INTO payment VALUES (500000000000, 'Lebron James', 500, '500 Los Angeles', '2023-09-01')
+[2020-02-27 22:03:02] 1 row affected in 6 ms
+
+
 ```
 
 
