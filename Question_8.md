@@ -1,32 +1,24 @@
 ```sql
-ALTER TABLE member
-    ADD CHECK (length(password)>=6);
-sql> ALTER TABLE member
-         ADD CHECK (length(password)>=6)
-[2020-02-27 21:10:21] completed in 40 ms
+ALTER TABLE redeemspoints
+    ADD CHECK (amt_of_points >= 0);
+sql> ALTER TABLE redeemspoints
+         ADD CHECK (amt_of_points >= 0)
+[2020-02-27 21:26:41] completed in 9 ms
 
-ALTER TABLE member
-    ADD CHECK (points>=0);
-sql> ALTER TABLE member
-         ADD CHECK (points>=0)
-[2020-02-27 21:13:04] completed in 213 ms
+ALTER TABLE driver
+    ADD CHECK (licence_expiry > current_date);
+sql> ALTER TABLE driver
+         ADD CHECK (licence_expiry > current_date)
+[2020-02-27 21:32:24] completed in 8 ms
 
+INSERT INTO driver VALUES ('123456789', 'Helen', '1995-01-01', '1996-01-01');
+sql> INSERT INTO driver VALUES ('123456789', 'Helen', '1995-01-01', '1996-01-01')
+[2020-02-27 21:34:29] [23514] ERROR: new row for relation "driver" violates check constraint "driver_licence_expiry_check"
+[2020-02-27 21:34:29] Detail: Failing row contains (123456789, Helen, 1995-01-01, 1996-01-01).
 
-INSERT INTO member VALUES ('hao.li@mail.mcgill.ca', '123456', '2010-02-03', 1000);
-sql> INSERT INTO member VALUES ('hao.li@mail.mcgill.ca', '123456', '2010-02-03', 1000)
-[2020-02-27 21:11:49] 1 row affected in 99 ms
+UPDATE redeemspoints
+SET amt_of_points=-100 WHERE email='tom@gmail.com';
+sql> select current_database() as a, current_schemas(false) as b
+[2020-02-27 21:35:24] completed in 23 ms
 
-
-UPDATE member
-SET points=points-1000 WHERE email='lebron.james@nba.com';
-sql> UPDATE member
-     SET points=points-1000 WHERE email='lebron.james@nba.com'
-[2020-02-27 21:14:31] [23514] ERROR: new row for relation "member" violates check constraint "member_points_check"
-[2020-02-27 21:14:31] Detail: Failing row contains (lebron.james@nba.com, 123456, 2010-02-03, -600).
-
-
-INSERT INTO member VALUES ('julia.kafato@mail.mcgill.ca', '123456', '2010-02-03', -100);
-sql> INSERT INTO member VALUES ('julia.kafato@mail.mcgill.ca', '123456', '2010-02-03', -100)
-[2020-02-27 21:16:08] [23514] ERROR: new row for relation "member" violates check constraint "member_points_check"
-[2020-02-27 21:16:08] Detail: Failing row contains (julia.kafato@mail.mcgill.ca, 123456, 2010-02-03, -100).
 ```
