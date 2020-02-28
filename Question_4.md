@@ -99,19 +99,44 @@ cs421.cs421g83> INSERT INTO car VALUES ('000000009', 'Ford', 'ABC003','Fox', 'Bl
 
 cs421> INSERT INTO driver VALUES ('abc000001', 'Bradley Cooper', '1980-09-03','2021-06-01')
 [2020-02-27 12:02:30] 1 row affected in 29 ms
+
 cs421> INSERT INTO driver VALUES ('abc000002', 'Jason Tatum', '1990-10-03','2021-06-01')
 [2020-02-27 12:02:30] 1 row affected in 9 ms
+
 cs421> INSERT INTO driver VALUES ('abc000003', 'Kyrie Irving', '1991-02-03','2021-06-01')
 [2020-02-27 12:02:30] 1 row affected in 9 ms
+
 cs421> INSERT INTO driver VALUES ('abc000004', 'Tristan Thompson', '1985-09-03','2021-06-01')
 [2020-02-27 12:02:30] 1 row affected in 13 ms
+
 cs421> INSERT INTO driver VALUES ('abc000005', 'Ja Morant', '1995-07-04','2021-06-01')
 [2020-02-27 12:02:30] 1 row affected in 10 ms
+
 cs421> INSERT INTO driver VALUES ('abc000006', 'Trae Young', '1996-06-02','2021-06-01')
 [2020-02-27 12:02:31] 1 row affected in 12 ms
+
 cs421> INSERT INTO driver VALUES ('abc000007', 'Steph Curry', '1989-10-12','2021-06-01')
 [2020-02-27 12:02:31] 1 row affected in 13 ms
 
+
+/* Insert employee */
+cs421> INSERT INTO employee VALUES (0000001, 5140000001, 'Danny Green', 'danny.green@nba.com', 3000, '2019-06-30', 'Customer Service', '1985-12-31')
+[2020-02-27 20:02:29] 1 row affected in 9 ms
+
+cs421> INSERT INTO employee VALUES (0000002, 5140000002, 'Jeff Green', 'jeff.green@nba.com', 3000, '2019-06-30', 'Customer Service', '1984-11-20')
+[2020-02-27 20:02:29] 1 row affected in 13 ms
+
+cs421> INSERT INTO employee VALUES (0000003, 5140000003, 'JaVale McGee', 'javale.mcgee@nba.com', 6000, '2019-12-30', 'Maintenance','1990-12-31')
+[2020-02-27 20:02:29] 1 row affected in 9 ms
+
+cs421> INSERT INTO employee VALUES (0000004, 5140000004, 'Anthony Davis', 'anthony.davis@nba.com', 3000, '2018-06-30', 'Maintenance','1988-11-20')
+[2020-02-27 20:02:29] 1 row affected in 8 ms
+
+cs421> INSERT INTO employee VALUES (0000005, 5140000005, 'Demarcus Cousins', 'demarcus.cousins@nba.com', 3000, '2019-01-30', 'Customer Service','1991-12-23')
+[2020-02-27 20:02:29] 1 row affected in 9 ms
+
+cs421.cs421g83> INSERT INTO employee VALUES (0000006, 5140000006, 'Jimmy Buttler', 'jimmy.buttler@nba.com', 6000, '2019-02-10', 'Maintenance','1986-10-20')
+[2020-02-27 20:03:13] 1 row affected in 8 ms
 
 
 ```
