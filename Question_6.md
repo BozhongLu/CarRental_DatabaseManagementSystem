@@ -1,3 +1,4 @@
+Modification 1:
 ```sql
 SELECT * FROM member;
 sql> SELECT * FROM member
@@ -6,7 +7,6 @@ bozhong.lu@mail.mcgill.ca	123456	2008-01-01	1000
 hao.li@mail.mcgill.ca	123456	2010-02-03	1000
 muhang.li@mail.mcgill.ca	654321	2020-02-19	1000
 lebron.james@nba.com	123456	2010-02-03	900
-
 
 UPDATE member SET points=
     (SELECT points FROM member WHERE member.email='lebron.james@nba.com') -
@@ -25,5 +25,9 @@ bozhong.lu@mail.mcgill.ca	123456	2008-01-01	1000
 hao.li@mail.mcgill.ca	123456	2010-02-03	1000
 muhang.li@mail.mcgill.ca	654321	2020-02-19	1000
 lebron.james@nba.com	123456	2010-02-03	800
+```
+
+Modification 2:
+```sql
 
 ```
