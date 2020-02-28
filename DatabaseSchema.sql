@@ -2,7 +2,6 @@ CREATE TABLE CarClass
 (
     name         VARCHAR(50)  NOT NULL PRIMARY KEY,
     daily_price  FLOAT        NOT NULL,
-    availability INT          NOT NULL,
     num_seats    INT          NOT NULL,
     features     VARCHAR(200) NOT NULL,
 );
@@ -115,6 +114,7 @@ CREATE TABLE Member (
   Email             VARCHAR(50) NOT NULL PRIMARY KEY,
   Password          VARCHAR(50) NOT NULL,
   Registration_date DATE        NOT NULL
+  FOREIGN KEY (email) REFERENCES Customer
 );
 
 CREATE TABLE Payment (
