@@ -1,4 +1,5 @@
 Modification 1:
+Description: It checks the relation redeemspoints, subtracts the amount from the points attribute of member, and then deletes the record in the redeemspoints relation.
 ```sql
 SELECT * FROM member;
 sql> SELECT * FROM member
@@ -25,6 +26,11 @@ bozhong.lu@mail.mcgill.ca	123456	2008-01-01	1000
 hao.li@mail.mcgill.ca	123456	2010-02-03	1000
 muhang.li@mail.mcgill.ca	654321	2020-02-19	1000
 lebron.james@nba.com	123456	2010-02-03	800
+
+DELETE FROM redeemspoints WHERE email='lebron.james@nba.com';
+sql> DELETE FROM redeemspoints WHERE email='lebron.james@nba.com'
+[2020-02-27 22:19:25] 1 row affected in 12 ms
+
 ```
 
 Modification 2:
