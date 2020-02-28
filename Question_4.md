@@ -142,8 +142,10 @@ cs421.cs421g83> INSERT INTO employee VALUES (0000006, 5140000006, 'Jimmy Buttler
 /* Insert maintenance */
 cs421.cs421g83> INSERT INTO maintenance VALUES (0000003, 'abc001', '2025-09-10')
 [2020-02-27 20:08:56] 1 row affected in 10 ms
+
 cs421.cs421g83> INSERT INTO maintenance VALUES (0000004, 'abc002', '2023-09-10')
 [2020-02-27 20:08:56] 1 row affected in 9 ms
+
 cs421.cs421g83> INSERT INTO maintenance VALUES (0000006, 'abc003', '2021-09-10')
 [2020-02-27 20:08:56] 1 row affected in 16 ms
 
@@ -151,32 +153,42 @@ cs421.cs421g83> INSERT INTO maintenance VALUES (0000006, 'abc003', '2021-09-10')
 /* Insert CustomerService */
 cs421.cs421g83> INSERT INTO customerservice VALUES (0000001)
 [2020-02-27 20:12:37] 1 row affected in 7 ms
+
 cs421.cs421g83> INSERT INTO customerservice VALUES (0000002)
 [2020-02-27 20:12:37] 1 row affected in 9 ms
+
 cs421.cs421g83> INSERT INTO customerservice VALUES (0000005)
 [2020-02-27 20:12:37] 1 row affected in 9 ms
 
 /* Insert payment */
 cs421> INSERT INTO payment VALUES (100000000000, 'Bozhong Lu', 100, '100 Montreal', '2023-09-01')
 [2020-02-27 22:03:02] 1 row affected in 9 ms
+
 cs421> INSERT INTO payment VALUES (200000000000, 'Muhang Li', 200, '200 Calgary', '2023-09-01')
 [2020-02-27 22:03:02] 1 row affected in 9 ms
+
 cs421> INSERT INTO payment VALUES (300000000000, 'Hao Li', 300, '300 Edmonton', '2023-09-01')
 [2020-02-27 22:03:02] 1 row affected in 6 ms
+
 cs421> INSERT INTO payment VALUES (400000000000, 'Julia Kafato', 400, '400 Toronto', '2023-09-01')
 [2020-02-27 22:03:02] 1 row affected in 5 ms
+
 cs421> INSERT INTO payment VALUES (500000000000, 'Lebron James', 500, '500 Los Angeles', '2023-09-01')
 [2020-02-27 22:03:02] 1 row affected in 6 ms
 
 /* Insert rental */
 cs421.cs421g83> INSERT INTO rental VALUES (1, 'Intermediate SUV', 'abc000001', 'bozhong.lu@mail.mcgill.ca', 100000000000, '221B Baker Street London England' )
 [2020-02-27 22:26:43] 1 row affected in 9 ms
+
 cs421.cs421g83> INSERT INTO rental VALUES (2, 'Intermediate SUV', 'abc000002', 'muhang.li@mail.mcgill.ca', 200000000000, '1225 MetCalfe Montreal QC Canada' )
 [2020-02-27 22:27:53] 1 row affected in 7 ms
+
 cs421.cs421g83> INSERT INTO rental VALUES (3, 'Intermediate SUV', 'abc000003', 'hao.li@mail.mcgill.ca', 300000000000, 'Tour Eiffel Champ de Mars Paris France' )
 [2020-02-27 22:27:53] 1 row affected in 9 ms
+
 cs421.cs421g83> INSERT INTO rental VALUES (4, 'Full Size Car', 'abc000004', 'julia.kafato@mail.mcgill.ca', 400000000000, '1225 MetCalfe Montreal QC Canada' )
 [2020-02-27 22:27:53] 1 row affected in 14 ms
+
 cs421.cs421g83> INSERT INTO rental VALUES (5, 'Compact Car', 'abc000005', 'lebron.james@nba.com', 500000000000, '1600 Pennsylvania Avenue Washington DC' )
 [2020-02-27 22:27:54] 1 row affected in 7 ms
 
