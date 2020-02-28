@@ -55,4 +55,4 @@ sql> UPDATE v_blackcars_InTransport
 
 
 View 1 is updatable while view 2 isn't. The reason is that View 1 selects from a single table, and view 2 selects from 2 tables.
-For a view to be updatable, the rows in the view must be in an 1 to 1 relationship with the rows in the base table.
+For a view to be updatable, the database must be able to uniquely identify the rows to be updated, and the fields must be updatable.
