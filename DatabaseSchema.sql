@@ -114,6 +114,7 @@ CREATE TABLE Member (
   Email             VARCHAR(50) NOT NULL PRIMARY KEY,
   Password          VARCHAR(50) NOT NULL,
   Registration_date DATE        NOT NULL
+  points            INT,
   FOREIGN KEY (email) REFERENCES Customer
 );
 
