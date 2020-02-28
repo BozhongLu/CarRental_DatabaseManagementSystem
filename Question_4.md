@@ -139,6 +139,23 @@ cs421.cs421g83> INSERT INTO employee VALUES (0000006, 5140000006, 'Jimmy Buttler
 [2020-02-27 20:03:13] 1 row affected in 8 ms
 
 
+/* Insert maintenance */
+cs421.cs421g83> INSERT INTO maintenance VALUES (0000003, 'abc001', '2025-09-10')
+[2020-02-27 20:08:56] 1 row affected in 10 ms
+cs421.cs421g83> INSERT INTO maintenance VALUES (0000004, 'abc002', '2023-09-10')
+[2020-02-27 20:08:56] 1 row affected in 9 ms
+cs421.cs421g83> INSERT INTO maintenance VALUES (0000006, 'abc003', '2021-09-10')
+[2020-02-27 20:08:56] 1 row affected in 16 ms
+
+
+/* Insert CustomerService */
+cs421.cs421g83> INSERT INTO customerservice VALUES (0000001)
+[2020-02-27 20:12:37] 1 row affected in 7 ms
+cs421.cs421g83> INSERT INTO customerservice VALUES (0000002)
+[2020-02-27 20:12:37] 1 row affected in 9 ms
+cs421.cs421g83> INSERT INTO customerservice VALUES (0000005)
+[2020-02-27 20:12:37] 1 row affected in 9 ms
+
 ```
 
 
