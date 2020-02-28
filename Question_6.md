@@ -36,4 +36,8 @@ sql> DELETE FROM redeemspoints WHERE email='lebron.james@nba.com'
 Modification 2:
 ```sql
 
+UPDATE carclass SET features= 
+          ('Our SUVs offer plenty of flexibility with seating capacity, power, and luggage room.')-
+          WHERE name='Intermediate SUV';
+
 ```
