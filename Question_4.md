@@ -290,6 +290,19 @@ cs421.cs421g83> INSERT INTO additionalpurchase VALUES (4, 'Insurance Person Cove
 cs421.cs421g83> INSERT INTO additionalpurchase VALUES (5, 'Winter Tire', 1, 20.10)
 [2020-02-28 19:17:27] 1 row affected in 6 ms
 
+/* Insert earnspoints */
+cs421.cs421g83> INSERT INTO earnspoints VALUES (1, 'bozhong.lu@mail.mcgill.ca')
+[2020-02-28 20:03:32] 1 row affected in 11 ms
+
+cs421.cs421g83> INSERT INTO earnspoints VALUES (2, 'muhang.li@mail.mcgill.ca')
+[2020-02-28 20:03:32] 1 row affected in 7 ms
+
+cs421.cs421g83> INSERT INTO earnspoints VALUES (3, 'hao.li@mail.mcgill.ca')
+[2020-02-28 20:03:32] 1 row affected in 7 ms
+
+cs421.cs421g83> INSERT INTO earnspoints VALUES (5, 'lebron.james@nba.com')
+[2020-02-28 20:04:34] 1 row affected in 7 ms
+
 
 
 
