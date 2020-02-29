@@ -66,3 +66,16 @@ sql> DELETE
                              WHERE expiry_date<current_date)
 [2020-02-28 23:04:02] 2 rows affected in 27 ms
 ```
+
+Modification 4:
+
+Description: It deletes all cars that are either too old or have been in service for too much distance.
+
+```sql
+DELETE FROM car
+WHERE purchase_date < '1997-01-01' OR milage > 10000;
+sql> DELETE FROM car
+     WHERE purchase_date < '1997-01-01' OR milage > 10000
+[2020-02-28 23:35:46] 1 row affected in 20 ms
+
+```
