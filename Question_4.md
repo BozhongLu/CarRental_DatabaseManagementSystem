@@ -230,14 +230,53 @@ cs421.cs421g83> INSERT INTO additionaldrivers VALUES ('abc000005', 3)
 
 cs421.cs421g83> INSERT INTO transportation VALUES (3, 1, '1225 MetCalfe Montreal QC Canada', '2020-02-23', '04:05:03')
 [2020-02-28 18:56:35] 1 row affected in 7 ms
+
 cs421.cs421g83> INSERT INTO transportation VALUES (4, 2, '350 Fifth Avenue New York USA', '2020-02-28', '04:05:03')
 [2020-02-28 18:59:08] 1 row affected in 10 ms
+
 cs421.cs421g83> INSERT INTO transportation VALUES (6, 3, '1600 Pennsylvania Avenue Washington DC', '2020-02-26', '04:05:03')
 [2020-02-28 18:59:08] 1 row affected in 8 ms
+
 cs421.cs421g83> INSERT INTO transportation VALUES (4, 4, '1225 MetCalfe Montreal QC Canada', '2020-02-27', '04:05:03')
 [2020-02-28 18:59:08] 1 row affected in 7 ms
+
 cs421.cs421g83> INSERT INTO transportation VALUES (3, 5, 'Tour Eiffel Champ de Mars Paris France', '2020-02-25', '04:05:03')
 [2020-02-28 18:59:08] 1 row affected in 9 ms
+
+
+/* Insert sells */
+cs421.cs421g83> INSERT INTO sells VALUES (1, 1)
+[2020-02-28 19:03:57] 1 row affected in 10 ms
+
+cs421.cs421g83> INSERT INTO sells VALUES (2, 2)
+[2020-02-28 19:03:57] 1 row affected in 8 ms
+
+cs421.cs421g83> INSERT INTO sells VALUES (3, 5)
+[2020-02-28 19:03:57] 1 row affected in 8 ms
+
+cs421.cs421g83> INSERT INTO sells VALUES (4, 3)
+[2020-02-28 19:03:57] 1 row affected in 10 ms
+
+cs421.cs421g83> INSERT INTO sells VALUES (5, 1)
+[2020-02-28 19:03:57] 1 row affected in 7 ms
+
+
+/* Insert appliedTo */
+cs421.cs421g83> INSERT INTO appliedto VALUES (1, 1 )
+[2020-02-28 19:09:50] 1 row affected in 8 ms
+
+cs421.cs421g83> INSERT INTO appliedto VALUES (2, 2 )
+[2020-02-28 19:09:50] 1 row affected in 9 ms
+
+cs421.cs421g83> INSERT INTO appliedto VALUES (3, 3 )
+[2020-02-28 19:09:50] 1 row affected in 7 ms
+
+cs421.cs421g83> INSERT INTO appliedto VALUES (5, 4 )
+[2020-02-28 19:09:50] 1 row affected in 6 ms
+
+cs421.cs421g83> INSERT INTO appliedto VALUES (4, 5 )
+[2020-02-28 19:09:50] 1 row affected in 8 ms
+
 
 
 
