@@ -278,6 +278,19 @@ cs421.cs421g83> INSERT INTO appliedto VALUES (4, 5 )
 [2020-02-28 19:09:50] 1 row affected in 8 ms
 
 
+/* Insert additionalPurchase */
+cs421.cs421g83> INSERT INTO additionalpurchase VALUES (1, 'GPS', 1, 20.10)
+[2020-02-28 19:12:45] 1 row affected in 8 ms
+cs421.cs421g83> INSERT INTO additionalpurchase VALUES (2, 'Trailer', 1, 50.34)
+[2020-02-28 19:14:03] 1 row affected in 8 ms
+cs421.cs421g83> INSERT INTO additionalpurchase VALUES (3, 'Insurance Car Coverage', 1, 30.99)
+[2020-02-28 19:14:03] 1 row affected in 6 m
+cs421.cs421g83> INSERT INTO additionalpurchase VALUES (4, 'Insurance Person Coverage', 1, 20.10)
+[2020-02-28 19:17:27] 1 row affected in 13 ms
+cs421.cs421g83> INSERT INTO additionalpurchase VALUES (5, 'Winter Tire', 1, 20.10)
+[2020-02-28 19:17:27] 1 row affected in 6 ms
+
+
 
 
 
