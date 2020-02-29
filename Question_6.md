@@ -1,5 +1,4 @@
-Modification 1:
-Description: It checks the relation redeemspoints, subtracts the amount from the points attribute of member, and then deletes the record in the redeemspoints relation.
+Modification 1:  Description: It checks the relation redeemspoints, subtracts the amount from the points attribute of member, and then deletes the record in the redeemspoints relation.
 ```sql
 SELECT * FROM member;
 sql> SELECT * FROM member
@@ -33,8 +32,7 @@ sql> DELETE FROM redeemspoints WHERE email='lebron.james@nba.com'
 
 ```
 
-Modification 2:
-Description: It checks whether the card provided by the card_holder has been expired or not. If the card has expired, it needs to be modified.
+Modification 2:  Description: It checks whether the card provided by the card_holder has been expired or not. If the card has expired, it needs to be modified.
 ```sql
 SELECT * FROM payment;
 200000000000	Muhang Li	200	200 Calgary	2023-09-01
