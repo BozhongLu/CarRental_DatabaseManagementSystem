@@ -34,14 +34,21 @@ sql> DELETE FROM redeemspoints WHERE email='lebron.james@nba.com'
 ```
 
 Modification 2:
+Description: It checks whether the card provided by the card_holder has been expired or not. If the card has expired, it needs to be modified.
 ```sql
+SELECT * FROM payment;
+200000000000	Muhang Li	200	200 Calgary	2023-09-01
+300000000000	Hao Li	300	300 Edmonton	2023-09-01
+400000000000	Julia Kafato	400	400 Toronto	2023-09-01
+500000000000	Lebron James	500	500 Los Angeles	2023-09-01
+100000000000	Bozhong Lu	456	100 Montreal	2019-02-01
 
-UPDATE carclass SET features= 
-          ('Our SUVs offer plenty of flexibility with seating capacity, power, and luggage room.')-
-          WHERE name='Intermediate SUV';
+SELECT * FROM payment WHERE expiry_date <= CURRENT_DATE;
+100000000000	Bozhong Lu	456	100 Montreal	2019-02-01
 
-SELECT features from carclass WHERE name='Intermediate SUV';
-'Our SUVs offer plenty of flexibility with seating capacity, power, and luggage room.'
-
+UPDATE payment SET expiry_date='2023-05-03' WHERE card_number=100000000000;
+UPDATE payment SET cvc=123 WHERE card_number=100000000000;
+SELECT * from payment WHERE cardholder='Bozhong Lu';
+100000000000	Bozhong Lu	123	100 Montreal	2023-05-03
 
 ```
