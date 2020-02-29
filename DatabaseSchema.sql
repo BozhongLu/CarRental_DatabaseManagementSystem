@@ -92,7 +92,9 @@ CREATE TABLE Rental
     card_number    BIGINT      NOT NULL,
     FOREIGN KEY (card_number) REFERENCES Payment,
     address        VARCHAR(50) NOT NULL,
-    FOREIGN KEY (address) REFERENCES Location
+    FOREIGN KEY (address) REFERENCES Location,
+    PickedupAt  TIMESTAMP,
+    DropedoffAt TIMESTAMP
 );
 
 CREATE TABLE Maintenance
@@ -160,31 +162,6 @@ CREATE TABLE earnsPoints (
   PRIMARY KEY (rental_id),
   FOREIGN KEY (rental_id) REFERENCES Rental,
   FOREIGN KEY (email) REFERENCES Member
-);
-
-
-CREATE TABLE droppedOffAt (
-  droppedOffTime TIMESTAMP,
-  Rental_id      INT,
-  name           VARCHAR(50),
-  license_number VARCHAR(10),
-  email          VARCHAR(50),
-  card_number    INT,
-  address        VARCHAR(50) NOT NULL,
-  PRIMARY KEY (Rental_id),
-  FOREIGN KEY (address) REFERENCES location
-);
-
-CREATE TABLE pickedUpAt (
-  pickedUpTime   TIMESTAMP,
-  Rental_id      INT,
-  name           VARCHAR(50),
-  license_number VARCHAR(10),
-  email          VARCHAR(50),
-  card_number    INT,
-  address        VARCHAR(50) NOT NULL,
-  PRIMARY KEY (Rental_id),
-  FOREIGN KEY (address) REFERENCES location
 );
 
 
