@@ -50,3 +50,19 @@ SELECT * from payment WHERE cardholder='Bozhong Lu';
 100000000000	Bozhong Lu	123	100 Montreal	2023-05-03
 
 ```
+
+Modification 3:
+
+Description: It deletes all expired discount points from the relationship
+```sql
+DELETE
+FROM redeemspoints
+WHERE discount_code in (SELECT discount_code FROM discount
+                        WHERE expiry_date<current_date);
+                        
+sql> DELETE
+     FROM redeemspoints
+     WHERE discount_code in (SELECT discount_code FROM discount
+                             WHERE expiry_date<current_date)
+[2020-02-28 23:04:02] 2 rows affected in 27 ms
+```
